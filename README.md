@@ -1,55 +1,49 @@
 # Final-Project---Car-Accidents-Spain-2024
 Final Projet for Ironhack Data Analyst
-This repository contains a full data analysis workflow for traffic accidents occurring in Spain in 2024, including data cleaning processes, table creation, visual exploration, and preparation for SQL storage and Power BI visualization.
-🗂️ Data Files
+  This repository contains a full data analysis workflow for traffic accidents occurring in Spain in 2024, including data cleaning processes, table creation, visual exploration, and preparation for SQL storage and Power BI visualization.
+  🗂️ Data Files
 
 The following .csv files contain the core dataset used throughout the project:
 
-ACC_ANIMALES_2024.csv
-Original source file containing accident records involving animals.
+    - ACC_ANIMALES_2024.csv: Original source file containing accident records involving animals.
+    
+    - TABLA_ACCIDENTES_24.csv: General accident table (main raw dataset).
 
-TABLA_ACCIDENTES_24.csv
-General accident table (main raw dataset).
+    - accidentes.csv: Cleaned and structured accident data, created from the original dataset.
 
-accidentes.csv
-Cleaned and structured accident data, created from the original dataset.
+    - ubicacion.csv: Derived table containing standardized location information (city, coordinates, road, etc.).
 
-ubicacion.csv
-Derived table containing standardized location information (city, coordinates, road, etc.).
+     - clima.csv: Derived table with weather conditions present at the moment of each accident.
 
-clima.csv
-Derived table with weather conditions present at the moment of each accident.
-
-via.csv
-Derived table describing road characteristics (surface type, condition, signage, etc.).
+     - via.csv: Derived table describing road characteristics (surface type, condition, signage, etc.).
 
 All derived CSVs (accidentes, ubicacion, clima, via) were created after cleaning and preprocessing the original datasets using Jupyter notebooks.
 
 📓 Notebooks
 
-Primer Vistazo.ipynb
+  Primer Vistazo.ipynb
 Initial data exploration: dataset dimensions, data types, first observations, and detection of null values, duplicates, and outliers.
 
-Análisis.ipynb
+  Análisis.ipynb
 In-depth analysis with visualizations, correlations, and data segmentation.
 
-Creación Tablas.ipynb
+  Creación Tablas.ipynb
 Notebook used to generate the derived tables (accidentes.csv, ubicacion.csv, clima.csv, via.csv) from the raw dataset.
 
-ConexionSQL.ipynb
+  ConexionSQL.ipynb
 Notebook for connecting to an SQL database, creating the relational model, and loading the cleaned tables.
 
 📊 Visualizations
 
-NewVisuals.pbix
+  NewVisuals.pbix
 Power BI file including dashboards and visual analytics based on the processed dataset.
 
 📄 Other Files
 
-LICENSE
+  LICENSE
 Project license.
 
-README.md
+  README.md
 This documentation file.
 
 🚀 Project Goals
